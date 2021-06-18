@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ive been here {{session['count']}} times</h1>
+    <p>Add 2 Sessions</p>
+    <form action="/plus_two" method="POST">
+        <input type="hidden" name="counter" value="0">
+        <input type="submit" name="counter" id="0">
+    </form>
+    <p>Reset your session count</p>
+    <form action="/destroy_session">
+        <input type="hidden" name="destroy" value="0">
+        <input type="submit" name="destroy" id="0">
+    </form>
+</body>
+</html>
